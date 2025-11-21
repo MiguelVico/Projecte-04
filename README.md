@@ -90,27 +90,27 @@ EverPia 3 simbolitza el moment en què el júnior deixa de ser l’última baula
 
 ## Enllços a les carpetes
 
-### Tasques
+### Tasques i productes
 
-[Tasca 1](tasca01)
-[Tasca 2](tasca02)
-[Tasca 3](tasca03)
-[Tasca 4](tasca04)
-[Tasca 5](tasca05)
-[Tasca 6](tasca06)
-[Tasca 7](tasca07)
-[Tasca 8](tasca08)
-[Tasca 9](tasca09)
-[Tasca 10](tasca10)
-[Tasca 11](tasca11)
-[Tasca 12](tasca12)
-[Tasca 13](tasca13)
-[Tasca 14](tasca14)
-[Tasca 15](tasca15)
 
-### Productes finals
-
-[Producte 1](producte01)
-[Producte 2](Producte02)
-[Producte 3](Producte03)
 [Producte 4](Producte04)
+
+
+| Tasques                                                       | Productes                                                   |
+|---------------------------------------------------------------|-------------------------------------------------------------|
+| 📁 [Tasca 0](tasca0)                                          | 📦 [Producte 1](producte01)                                |
+| 📁 [Tasca 1](tasca01)                                         | 📦 [Producte 2](Producte02)                                |
+| 📁 [Tasca 2](tasca02)                                         | 📦 [Producte 3](Producte03)                                |
+| 📁 [Tasca 3](tasca03)                                         | 📦 [Producte 4](Producte04)                                |
+| 📁 [Tasca 4](tasca04)                                         |                                                             |
+| 📁 [Tasca 5](tasca05)                                         |                                                             |
+| 📁 [Tasca 6](tasca06)                                         |                                                             |
+| 📁 [Tasca 7](tasca07)                                         |                                                             |
+| 📁 [Tasca 8](tasca08)                                         |                                                             |
+| 📁 [Tasca 9](tasca09)                                         |                                                             |
+| 📁 [Tasca 10](tasca10)                                        |                                                             |
+| 📁 [Tasca 11](tasca11)                                        |                                                             |
+| 📁 [Tasca 12](tasca12)                                        |                                                             |
+| 📁 [Tasca 13](tasca13)                                        |                                                             |
+| 📁 [Tasca 14](tasca14)                                        |                                                             |
+| 📁 [Tasca 15](tasca15)                                        |                                                             |
