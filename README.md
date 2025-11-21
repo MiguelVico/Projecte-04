@@ -107,11 +107,10 @@ EverPia 3 simbolitza el moment en què el júnior deixa de ser l’última baula
 [Tasca 1](tasca13)
 [Tasca 1](tasca14)
 [Tasca 1](tasca15)
-[Tasca 1](tasca16)
 
-### Projectes finals
+### Productes finals
 
-[Projecte 1](projecte01)
-[Projecte 2](projecte02)
-[Projecte 3](projecte03)
-[Projecte 4](projecte04)
+[Producte 1](producte01)
+[Producte 2](Producte02)
+[Producte 3](Producte03)
+[Producte 4](Producte04)
