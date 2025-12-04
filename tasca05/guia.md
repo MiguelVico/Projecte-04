@@ -18,7 +18,7 @@ sudo netplan apply
 **Explicació:**
 Aplica la configuració de xarxa definida a `/etc/netplan/`. És com dir "activa els canvis que t'he dit".
 
-![Configuració de xarxa amb netplan](/tasca05/img_T05/captura1.png)
+![Configuració de xarxa amb netplan](/tasca05/img_t05/captura1.png)
 *La IP està configurada amb DHCP4: true*
 
 ---
@@ -36,7 +36,7 @@ sudo apt upgrade && sudo apt update -y
 - `upgrade`: actualitza els paquets instal·lats
 - `-y`: diu "sí" automàticament a tot
 
-![Actualització del sistema](/tasca05/img_T05/captura3.png)
+![Actualització del sistema](/tasca05/img_t05/captura3.png)
 *El sistema s'actualitza automàticament*
 
 ---
@@ -67,10 +67,10 @@ sudo nano /etc/ssh/sshd_config
 #StrictModes yes                    # Comprova permisos dels fitxers clau
 ```
 
-![Configuració de sshd_config](/tasca05/img_T05/captura4.png)
+![Configuració de sshd_config](/tasca05/img_t05/captura4.png)
 *Fitxer de configuració complet del SSH*
 
-![Part de la configuració SSH](/tasca05/img_T05/captura5.png)
+![Part de la configuració SSH](/tasca05/img_t05/captura5.png)
 *Secció específica d'autenticació i usuaris*
 
 **Explicació:**
@@ -143,7 +143,7 @@ ssh -D 9876 usuari@192.168.56.106
 - `-D 9876`: crea un túnel SOCKS al port 9876 (més endavant l'explicarem)
 - `usuari@192.168.56.106`: usuari i IP del servidor
 
-![Primera connexió SSH](/tasca05/img_T05/captura7.png)
+![Primera connexió SSH](/tasca05/img_t05/captura7.png)
 
 **Anàlisi de la captura:**
 El sistema ens diu: "The authenticity of host '192.168.56.106 (192.168.56.106)' can't be established."
@@ -162,7 +162,7 @@ El sistema ens diu: "The authenticity of host '192.168.56.106 (192.168.56.106)' 
 ssh usuari@192.168.56.106
 ```
 
-![Connexió SSH des de PowerShell](/tasca05/img_T05/captura15.png)
+![Connexió SSH des de PowerShell](/tasca05/img_t05/captura15.png)
 
 **Anàlisi:**
 - Demana la contrasenya de l'usuari remot
@@ -189,7 +189,7 @@ Crea un túnel SOCKS al port local 9876 que redirigeix tot el tràfic a través 
 3. Port: `9876`
 4. Tipus: SOCKS v5
 
-![Configuració de proxy a Windows](/tasca05/img_T05/captura14.png)
+![Configuració de proxy a Windows](/tasca05/img_t05/captura14.png)
 *Així tot el nostre tràfic web passa pel túnel segur*
 
 ---
@@ -199,10 +199,10 @@ Crea un túnel SOCKS al port local 9876 que redirigeix tot el tràfic a través 
 #### 5.2.1 Instal·lació de Wireshark
 **Descàrreguem des del lloc oficial:**
 
-![Descàrrega de Wireshark](/tasca05/img_T05/captura8.png)
-![Instal·lador de Wireshark](/tasca05/img_T05/captura9.png)
-![Completant la instal·lació](/tasca05/img_T05/captura10.png)
-![Instal·lació finalitzada](/tasca05/img_T05/captura11.png)
+![Descàrrega de Wireshark](/tasca05/img_t05/captura8.png)
+![Instal·lador de Wireshark](/tasca05/img_t05/captura9.png)
+![Completant la instal·lació](/tasca05/img_t05/captura10.png)
+![Instal·lació finalitzada](/tasca05/img_t05/captura11.png)
 
 **Procés:**
 1. Baixem la versió 4.6.2 per Windows
@@ -219,10 +219,10 @@ Crea un túnel SOCKS al port local 9876 que redirigeix tot el tràfic a través 
 4. Iniciem la captura
 5. Fem una connexió SSH
 
-![Cerca de Wireshark al menú d'inici](/tasca05/img_T05/captura12.png)
-![Interfície principal de Wireshark](/tasca05/img_T05/captura13.png)
+![Cerca de Wireshark al menú d'inici](/tasca05/img_t05/captura12.png)
+![Interfície principal de Wireshark](/tasca05/img_t05/captura13.png)
 
-![Captura de tràfic SSH](/tasca05/img_T05/captura16.png)
+![Captura de tràfic SSH](/tasca05/img_t05/captura16.png)
 
 **Anàlisi de la captura:**
 A la taula veiem:
@@ -246,7 +246,7 @@ A la taula veiem:
 scp .\.ssh\id_rsa.pub usuari@192.168.56.106:id_rsa.pub
 ```
 
-![Còpia de la clau pública al servidor](/tasca05/img_T05/captura19.png)
+![Còpia de la clau pública al servidor](/tasca05/img_t05/captura19.png)
 
 **Explicació:**
 - `scp`: Secure Copy, com el `cp` però a través de SSH
@@ -263,7 +263,7 @@ scp .\.ssh\id_rsa.pub usuari@192.168.56.106:id_rsa.pub
 ssh-keygen -t rsa
 ```
 
-![Generació de claus SSH a Windows](/tasca05/img_T05/captura17.png)
+![Generació de claus SSH a Windows](/tasca05/img_t05/captura17.png)
 
 **Procés:**
 1. Demana on guardar la clau (per defecte `C:\Users\usuari\.ssh\id_rsa`)
@@ -272,7 +272,7 @@ ssh-keygen -t rsa
    - `id_rsa` → clau PRIVADA (NO compartir mai)
    - `id_rsa.pub` → clau PÚBLICA (sí que es pot compartir)
 
-![Llistat de claus generades](/tasca05/img_T05/captura18.png)
+![Llistat de claus generades](/tasca05/img_t05/captura18.png)
 *Veiem els dos fitxers creats: la privada (2610 bytes) i la pública (577 bytes)*
 
 ---
@@ -285,7 +285,7 @@ ssh-keygen -t rsa
 mkdir .ssh
 ```
 
-![Crear directori .ssh al servidor](/tasca05/img_T05/captura20.png)
+![Crear directori .ssh al servidor](/tasca05/img_t05/captura20.png)
 
 #### 7.2.2 Afegir la clau pública
 **Comandes al servidor:**
@@ -294,7 +294,7 @@ touch .ssh/authorized_keys
 cat id_rsa.pub >> .ssh/authorized_keys
 ```
 
-![Afegir la clau a authorized_keys](/tasca05/img_T05/captura21.png)
+![Afegir la clau a authorized_keys](/tasca05/img_t05/captura21.png)
 
 **Explicació:**
 1. Creem el fitxer `authorized_keys` si no existeix
@@ -309,7 +309,7 @@ cat id_rsa.pub >> .ssh/authorized_keys
 ssh usuari@192.168.56.106
 ```
 
-![Connexió SSH sense contrasenya](/tasca05/img_T05/captura22.png)
+![Connexió SSH sense contrasenya](/tasca05/img_t05/captura22.png)
 
 **Resultat:**
 - ✅ No demana contrasenya
