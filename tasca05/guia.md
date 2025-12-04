@@ -16,7 +16,7 @@ sudo netplan apply
 **Explicació:**  
 Aquesta comanda aplica els canvis de configuració de xarxa que hem definit a `/etc/netplan/`. És com dir-li al sistema: “Ara sí, activa la nova configuració de xarxa que t’he donat”.
 
-![Configuració de xarxa amb netplan](/tasca05/img_T05/captura1.png)
+![Configuració de xarxa amb netplan](/tasca05/img_t05/captura1.png)
 
 ---
 
@@ -33,7 +33,7 @@ sudo apt upgrade && sudo apt update -y
 - `sudo apt upgrade` actualitza els paquets instal·lats a les noves versions.  
 - El `-y` fa que contesti “sí” automàticament a tot, per no haver d’estar pendent.
 
-![Actualització del sistema](/tasca05/img_T05/captura3.png)
+![Actualització del sistema](/tasca05/img_t05/captura3.png)
 
 ---
 
@@ -50,8 +50,8 @@ sudo nano /etc/ssh/sshd_config
 - `AllowUsers usuari`: només l’usuari “usuari” pot connectar-se via SSH.  
 - `StrictModes yes`: el sistema comprova els permisos dels fitxers clau abans d’acceptar connexions.
 
-![Configuració de sshd_config](/tasca05/img_T05/captura4.png)  
-![Part de la configuració SSH](/tasca05/img_T05/captura5.png)
+![Configuració de sshd_config](/tasca05/img_t05/captura4.png)  
+![Part de la configuració SSH](/tasca05/img_t05/captura5.png)
 
 ---
 
@@ -71,7 +71,7 @@ ssh -D 9876 usuari@192.168.56.106
 **Anàlisi de la captura:**  
 En la primera connexió, el sistema ens avisa que no reconeix la màquina remota i ens mostra la seva empremta digital (fingerprint) per verificar-ne l’autenticitat. Això és normal i és part de la seguretat de SSH.
 
-![Primera connexió SSH](/tasca05/img_T05/captura7.png)
+![Primera connexió SSH](/tasca05/img_t05/captura7.png)
 
 ---
 
@@ -81,10 +81,10 @@ Wireshark és una eina que ens permet capturar i analitzar paquets de xarxa. És
 **Descàrrega des del lloc oficial:**  
 A la pàgina de Wireshark podem veure les versions estables i escollir la que coincideixi amb el nostre sistema (Windows, macOS, Ubuntu, etc.).
 
-![Descàrrega de Wireshark](/tasca05/img_T05/captura8.png)  
-![Instal·lador de Wireshark](/tasca05/img_T05/captura9.png)  
-![Completant la instal·lació](/tasca05/img_T05/captura10.png)  
-![Instal·lació finalitzada](/tasca05/img_T05/captura11.png)
+![Descàrrega de Wireshark](/tasca05/img_t05/captura8.png)  
+![Instal·lador de Wireshark](/tasca05/img_t05/captura9.png)  
+![Completant la instal·lació](/tasca05/img_t05/captura10.png)  
+![Instal·lació finalitzada](/tasca05/img_t05/captura11.png)
 
 **Explicació:**  
 Wireshark s’instal·la amb un assistent senzill. Cal assegurar-se de tancar l’aplicació abans de començar la instal·lació. En el procés, també instal·la **Npcap** (per a Windows), que permet capturar tràfic de xarxa.
@@ -99,10 +99,10 @@ Wireshark ens permet veure el tràfic de xarxa en temps real. És útil per comp
 2. Apliquem un filtre `ssh` per veure només el tràfic SSH.  
 3. Iniciem la captura i fem una connexió SSH des d’un client.
 
-![Cerca de Wireshark al menú d'inici](/tasca05/img_T05/captura12.png)  
-![Interfície principal de Wireshark](/tasca05/img_T05/captura13.png)  
-![Configuració de proxy a Windows](/tasca05/img_T05/captura14.png)  
-![Captura de tràfic SSH](/tasca05/img_T05/captura16.png)
+![Cerca de Wireshark al menú d'inici](/tasca05/img_t05/captura12.png)  
+![Interfície principal de Wireshark](/tasca05/img_t05/captura13.png)  
+![Configuració de proxy a Windows](/tasca05/img_t05/captura14.png)  
+![Captura de tràfic SSH](/tasca05/img_t05/captura16.png)
 
 **Anàlisi de la captura 16:**  
 A la taula de Wireshark es veuen paquets entre `192.168.56.106` (servidor) i `10.0.2.15` (client).  
@@ -125,7 +125,7 @@ ssh usuari@192.168.56.106
 **Explicació:**  
 Igual que a Linux, `ssh` seguit de l’usuari i la IP del servidor. La primera vegada et demanarà la contrasenya de l’usuari remot.
 
-![Connexió SSH des de PowerShell](/tasca05/img_T05/captura15.png)
+![Connexió SSH des de PowerShell](/tasca05/img_t05/captura15.png)
 
 **Anàlisi de la captura:**  
 Un cop acceptada la contrasenya, el servidor ens dóna la benvinguda i mostra informació del sistema (càrrega, ús de memòria, actualitzacions pendents). Això confirma que la connexió ha estat exitosa i que estem dins del servidor Ubuntu.
@@ -148,8 +148,8 @@ ssh-keygen -t rsa
   - `id_rsa` (clau privada – NO la comparteixis mai).  
   - `id_rsa.pub` (clau pública – aquesta sí que la copiem al servidor).
 
-![Generació de claus SSH a Windows](/tasca05/img_T05/captura17.png)  
-![Llistat de claus generades](/tasca05/img_T05/captura18.png)
+![Generació de claus SSH a Windows](/tasca05/img_t05/captura17.png)  
+![Llistat de claus generades](/tasca05/img_t05/captura18.png)
 
 ### 8.2 Copiar la clau pública al servidor Linux  
 **Comanda utilitzada:**  
@@ -160,7 +160,7 @@ scp .\.ssh\id_rsa.pub usuari@192.168.56.106:id_rsa.pub
 **Explicació:**  
 `scp` (Secure Copy) copia el fitxer de la clau pública al directori home del servidor remot.
 
-![Còpia de la clau pública al servidor](/tasca05/img_T05/captura19.png)
+![Còpia de la clau pública al servidor](/tasca05/img_t05/captura19.png)
 
 ### 8.3 Configurar la clau al servidor  
 Des del servidor Linux, afegim la clau pública al fitxer `authorized_keys`.
@@ -178,13 +178,13 @@ cat id_rsa.pub >> .ssh/authorized_keys
 - Afegim el contingut de la clau pública al fitxer.  
 Això permetrà que el client Windows es connecti sense contrasenya.
 
-![Crear directori .ssh al servidor](/tasca05/img_T05/captura20.png)  
-![Afegir la clau a authorized_keys](/tasca05/img_T05/captura21.png)
+![Crear directori .ssh al servidor](/tasca05/img_t05/captura20.png)  
+![Afegir la clau a authorized_keys](/tasca05/img_t05/captura21.png)
 
 ### 8.4 Provar la connexió sense contrasenya  
 Ara, en connectar-nos des de Windows, no demanarà contrasenya (si la clau privada està ben configurada).
 
-![Connexió SSH sense contrasenya](/tasca05/img_T05/captura22.png)
+![Connexió SSH sense contrasenya](/tasca05/img_t05/captura22.png)
 
 **Anàlisi de la captura:**  
 Es connecta directament i mostra el missatge de benvinguda. Això confirma que l’autenticació per clau ha funcionat correctament.
