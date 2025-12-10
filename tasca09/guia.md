@@ -456,6 +456,8 @@ sudo nano /etc/fstab
 ```
 ![Configuració del fstab](/tasca09/img_t09/captura39.png)
 
+Fem un reboot
+
 *Anàlisi:*
 - **Origen**: la IP del servidor i la ruta exportada.
 - **Punt de muntatge**: les carpetes locals on es muntaran.
