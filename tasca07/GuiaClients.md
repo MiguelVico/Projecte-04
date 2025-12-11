@@ -12,6 +12,8 @@ El primer pas és baixar l’aplicació **TeamViewer QuickSupport**. Aquesta ver
 *A la pàgina web de TeamViewer, busca l’opció de descàrrega per a Windows.*
 
 ![Secció de descàrregues](/tasca07/img_client/captura2.png)
+
+![Secció de descàrregues](/tasca07/img_client/captura3.png)
 *Desplaça’t fins a la part on posa **“Descarga QuickSupport – Recibe asistencia”** i fes-hi clic.*
 
 ---
