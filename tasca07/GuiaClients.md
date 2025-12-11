@@ -83,6 +83,3 @@ Recorda:
 
 I ja està! Amb això podrem ajudar-te en qüestió de minuts. 🚀
 
----
-
-*Si tens cap dubte abans o durant la connexió, truca’ns sense problema.*
