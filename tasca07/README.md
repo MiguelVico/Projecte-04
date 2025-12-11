@@ -117,7 +117,7 @@ https://www.genbeta.com/herramientas/chrome-remote-desktop-que-como-funciona-com
 
 ---
 
-[Guia per a tecnics](GuiaInterna.md)
+[Guia per a tecnics](guiaInterna.md)
 
 [Guia per a clients](GuiaClients.md)
 
